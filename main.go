@@ -15,6 +15,6 @@ func main() {
 
 	fmt.Printf("Welcome, %s \n\n", user.Name)
 
-	r := repl.NewRepl(">>> ", []string{"q"})
+	r := repl.NewRepl(">>> ", []string{"q", "quit"})
 	r.Start(os.Stdin, os.Stdout)
 }
